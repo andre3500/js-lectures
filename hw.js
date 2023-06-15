@@ -29,7 +29,7 @@ else {
     Результат виводити в консоль.
 */
 
-let price = 100;
+let price = 1400;
 
 if(price >= 1000 && price <= 1900){
     console.log('це значення знаходиться в діапазоні ціни')
@@ -45,19 +45,26 @@ else {
 
 */
 
+
 let price = 100;
 
 if(price >= 1000 && price <= 1900){
     console.log('це значення знаходиться в діапазоні ціни')
 }
 else {
-    console.log('Помилка! Значення поза доступним діапазоном')
+    console.log('Значення поза доступним діапазоном') //здається минуле рішення покрило і цю задачу також
 }
 
 
 
+let price = 100;
 
-
+if(price != 1000 && price != 1900){
+    console.log('це значення знаходиться в діапазоні ціни')
+}
+else {
+    console.log('Помилка! Значення поза доступним діапазоном')
+}
 
 /*
 
@@ -65,7 +72,19 @@ else {
     Результат виводити в консоль.
 */
 
+let num = 53;
 
+if(num == 1){
+    console.log('зима')
+} else if (num == 2) {
+    console.log('весна')
+} else if (num == 3) {
+    console.log('літо')
+} else if (num == 4) {
+    console.log('осінь')
+} else {
+    console.log('не сезон')
+}
 
 
 /*
@@ -79,13 +98,40 @@ else {
 
 
 
+
 /*
 6.  Задано номер дня тижня.
     За заданим номером вивести назву дня тижня використовуючи switch.
     Результат виводити в консоль.
 */
 
+let number = 39;
 
+switch(number){
+    case 1:
+        console.log('Monday')
+        break;
+    case 2:
+        console.log('Tuesday')
+        break;
+    case 3:
+        console.log('Wednesday')
+        break;
+    case 4:
+        console.log('Thursday')
+        break;
+    case 5:
+        console.log('Friday')
+        break;
+    case 6:
+        console.log('Saturday')
+        break;
+    case 7: 
+    console.log('Sunday')
+    break;
+    default: 
+    console.log('unknown value')
+}
 
 /*
 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
@@ -94,6 +140,38 @@ else {
 */
 
 
+let result;
+
+const operator = '*';
+
+const number1 = 6;
+const number2 = 9;
+
+switch(operator) {
+  case '+':
+  result = number1 + number2;
+  console.log(`${number1} + ${number2} = ${result}`);
+  break;
+
+  case '-':
+  result = number1 - number2;
+  console.log(`${number1} - ${number2} = ${result}`);
+  break;
+
+  case '*':
+  result = number1 * number2;
+  console.log(`${number1} * ${number2} = ${result}`);
+  break;
+
+  case '/':
+  result = number1 / number2;
+  console.log(`${number1} / ${number2} = ${result}`);
+  break;
+
+  default:
+  console.log('Invalid operator');
+  break;
+}
 
 /*
 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
