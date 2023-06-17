@@ -174,9 +174,9 @@ switch(operator) {
 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 */
 
-const str = 'JavaScript S0ftware Development';
+let str = 'JavaScript S0ftware Development';
 
-const noVowels = str.replace(/[aeiou]/gi, '');
+let noVowels = str.replace(/[aeiou]/gi, '');
 
 console.log(noVowels); 
 
@@ -188,3 +188,29 @@ console.log(noVowels);
 
     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 */
+
+
+const kilometers = 25;
+const factor = 1000;
+const meters = kilometers * factor;
+const kil ="кілометр";
+const met ="метрів"
+   
+   if(kilometers == 2 || kilometers == 3 || kilometers == 4){
+     let kil = "кілометри";
+     console.log(`${kilometers} ${kil} дорівнює ${meters} ${met}. `) 
+   }
+   else if(kilometers == 0 || kilometers >= 5) {
+     let kil = "кілометрів";
+     console.log(`${kilometers} ${kil} дорівнює ${meters} ${met}. `)
+        else if(kilometers == 0 || kilometers >= 5) {
+     let kil = "кілометрів";
+     console.log(`${kilometers} ${kil} дорівнює ${meters} ${met}. `)
+     
+   } 
+   else{
+   console.log(`${kilometers} ${kil} дорівнює ${meters} ${met}. `)
+   }
+  //${}
+    
+    //
