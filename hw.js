@@ -29,7 +29,7 @@ else {
     Результат виводити в консоль.
 */
 
-let price = 10;
+let price = 1000;
 
 if(price >= 1000 && price <= 1900){
     console.log('це значення знаходиться в діапазоні ціни')
@@ -46,7 +46,7 @@ else {
 */
 
 
-let price = 10;
+let price = 802;
 
 if (price < 1000 || price > 1900){
     console.log('це значення поза діапазоном')
@@ -57,7 +57,7 @@ else {
 
 
 
-let price = 1080;
+let price = 180;
 
 if (!(price >= 1000 && price <= 1900)) { 
     console.log('out of the price range')
@@ -74,7 +74,7 @@ else {
     Результат виводити в консоль.
 */
 
-let num = 53;
+let num = 0;
 
 if(num == 1){
     console.log('зима')
@@ -98,8 +98,13 @@ if(num == 1){
     Результат виводити в консоль.
 */
 
+let a = 5475;
+let b = 46;
+let c = 6346;
 
-
+if (a > b && a < c || a < b && a > c) {console.log ("a is medium")}
+else if (b > a && b < c || b < a && b > c) {console.log ("b is medium")}
+else {console.log("c is medium") }                                      // це абсолютно не те рішення що ви хотіли, але я вирішив надати хоч щось замість пустого місця. Я нажаль так і не зрозумів поставленої задачі, тому знайшов формулу і імплементував її в код
 
 /*
 6.  Задано номер дня тижня.
@@ -107,7 +112,7 @@ if(num == 1){
     Результат виводити в консоль.
 */
 
-let number = 39;
+let number = 8;
 
 switch(number){
     case 1:
@@ -132,8 +137,9 @@ switch(number){
     console.log('Sunday')
     break;
     default: 
-    console.log('unknown value')
+    console.log('not a weekday')
 }
+
 
 /*
 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
@@ -146,8 +152,8 @@ let result;
 
 const operator = '*';
 
-const number1 = 6;
-const number2 = 9;
+const number1 = 46;
+const number2 = 0;
 
 switch(operator) {
   case '+':
@@ -194,6 +200,8 @@ console.log(noVowels);
     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 */
 
+ 
+
 
 const kilometers = 0.001;
 const factor = 1000;
@@ -231,6 +239,7 @@ const met ="метрів"
   // не зміг нагуглити рішення як додати правило десятичних цифр до інших значень. Наприклад щоб значення 0.345 однаково працювало з 12.345 і 985.345 
   // 
     
+
   const meters = 21841;
   const factor = 1000;
   const kilometers = meters / factor;
@@ -267,3 +276,6 @@ const met ="метрів"
      else{
         console.log(`${meters} ${met} дорівнює ${kilometers} ${kil}. `)
      }
+
+
+     // задача реалізована не повністю, бо я нажаль так і не зрозумів як вирішити питання, які мене блокують
