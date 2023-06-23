@@ -85,3 +85,24 @@ const met ="метрів"
 
 
      // задача реалізована не повністю, бо я нажаль так і не зрозумів як вирішити питання, які мене блокують
+
+
+
+     /*switchcase & function for Fruits
+     */
+    
+function fruitColor(str) {
+ 
+  switch(str) {
+   case 'apple' : return 'green';
+     break;
+   case 'banana' : return 'yellow';
+     break;
+   case 'kiwi' : return 'green';
+     break;
+   case 'plum' : return 'red';
+     break;
+  }
+ }
+ let fruitColorResult = fruitColor('apple');
+ console.log(fruitColorResult)
