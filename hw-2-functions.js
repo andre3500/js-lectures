@@ -188,7 +188,7 @@ console.log(`${number1} ${operator} ${number2} = ${result}`)  // намудри�
 const removeVowels = function(string) {
     return string.replace(/[aeiou]/gi, '')
   }
-  console.log(removeVowels('happy'));
+  console.log(removeVowels('javascript'));
   
 
 
@@ -204,31 +204,23 @@ const removeVowels = function(string) {
 
 let metr = 3838;
 let kilometr = metr / 1000;
-let arr = [metr, kilometr];
-let result = "";
 
-for(let i = 0; i < arr.length; i++){
- let number = arr[i];
- let ending = "";
- if (number === Math. round (number)) {
-    if (number % 10 === 0 || (number % 10 >= 5 && number % 10 <= 19)) {
-      ending = "ів"
-      
-    } else if (number % 10 === 1) {
-      ending = ""
-    } else if (number % 10 >= 2 && number % 10 <= 4){
-      ending = "и"
+function metersToKilometers(number) {
+
+    if (number === Math.round(number)) {
+        if (number >= 5 && number <= 19) {
+            return "ів"
+        } else if (number % 10 === 1) {
+            return " "
+        } else if ((number >= 2 && number <=4) || (number % 10 >= 2 && number % 10 <= 4)){
+            return "и"
+        } else if (number % 10 === 0 || number % 10 >= 5 && number % 10 <= 10) {
+
+        }   return "ів"
+    }
+    else {
+        return "а"
     }
 }
-else {
-      ending = "а"
-}
 
-if(i === 0){
-   result = (`${metr} метр${ending} = `)
-}
-else{result = `${result} ${kilometr} кілометр${ending}`
-}
-}
-
-console.log(result)
+console.log(metr + " метр" + metersToKilometers(metr) + " = " + kilometr + " кілометр" + metersToKilometers(kilometr))
