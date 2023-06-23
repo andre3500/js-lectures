@@ -40,8 +40,7 @@ function range(price) {
          return "Увага! Значення поза доступним діапазоном";
     }
     
-    } 
-    
+}
     let rangeResult = range(13,20)
     console.log(rangeResult)
 
@@ -74,20 +73,22 @@ function range(price) {
     Результат виводити в консоль.
 */
 
-let num = 0;
-
-if(num == 1){
-    console.log('зима')
-} else if (num == 2) {
-    console.log('весна')
-} else if (num == 3) {
-    console.log('літо')
-} else if (num == 4) {
-    console.log('осінь')
-} else {
-    console.log('не сезон')
+function season(num) {
+  
+    if(num == 1){
+        return 'зима';
+    } else if (num == 2) {
+        return 'весна';
+    } else if (num == 3) {
+        return 'літо';
+    } else if (num == 4) {
+        return 'осінь';
+    } else {
+        return 'не сезон';
+    }
 }
-
+    let seasonResult = season([0]);
+    console.log(seasonResult)
 
 /*
 
@@ -98,47 +99,47 @@ if(num == 1){
     Результат виводити в консоль.
 */
 
-let a = 5475;
-let b = 46;
-let c = 6346;
 
-if (a > b && a < c || a < b && a > c) {console.log ("a is medium")}
-else if (b > a && b < c || b < a && b > c) {console.log ("b is medium")}
-else {console.log("c is medium") }                                      
+function equals(a,b,c) { 
+  
+if (a > b && a < c || a < b && a > c) {return "a is medium"}
+else if (b > a && b < c || b < a && b > c) {return "b is medium"}
+else {return"c is medium" }                                      
+}
 
+    let equalsResult = equals(1,64,3);
+    console.log(equalsResult)
+
+    
 /*
 6.  Задано номер дня тижня.
     За заданим номером вивести назву дня тижня використовуючи switch.
     Результат виводити в консоль.
 */
 
-let number = 8;
+function weekday(num) {
 
-switch(number){
-    case 1:
-        console.log('Monday')
-        break;
-    case 2:
-        console.log('Tuesday')
-        break;
-    case 3:
-        console.log('Wednesday')
-        break;
-    case 4:
-        console.log('Thursday')
-        break;
-    case 5:
-        console.log('Friday')
-        break;
-    case 6:
-        console.log('Saturday')
-        break;
-    case 7: 
-    console.log('Sunday')
-    break;
-    default: 
-    console.log('not a weekday')
-}
+    switch(num){
+        case 1: return'Monday';
+          break;
+        case 2: return'Tuesday';
+          break;
+        case 3: return'Wednesday';
+           break; 
+        case 4: return'Thursday';
+           break;
+        case 5: return'Friday';
+           break;
+        case 6: return'Saturday';
+           break;  
+        case 7: return'Sunday';
+           break;
+        default: return 'not a weekday';
+      }
+    }
+        let weekdayResult = weekday(47);
+        console.log(weekdayResult)
+    
 
 
 /*
