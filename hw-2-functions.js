@@ -54,27 +54,19 @@ function range(price) {
 */
 
 
-let price = 802;
+function range(price) {
 
-if (price < 1000 || price > 1900){
-    console.log('це значення поза діапазоном')
-}
-else {
-    console.log('значення в діапазоні')
-}
-
-
-
-let price = 180;
-
-if (!(price >= 1000 && price <= 1900)) { 
-    console.log('out of the price range')
-}
-else {
-    console.log('in a price range')
-}
-
-
+    if(price >= 1000 && price <= 1900){     //(!(price >= 1000 && price <= 1900)) - другий варіант з НЕ 
+      return 'це значення поза діапазоном';
+    }
+    else {
+         return 'значення в діапазоні';
+    }
+    
+    } 
+    
+    let rangeResult = range(13,20)
+    console.log(rangeResult)
 
 /*
 
