@@ -139,8 +139,6 @@ function weekday(num) {
     }
         let weekdayResult = weekday(47);
         console.log(weekdayResult)
-    
-
 
 /*
 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
@@ -148,49 +146,50 @@ function weekday(num) {
     Результат виводити в консоль.
 */
 
+const operator = ('*');
+const number1 = ('4');
+const number2 = ('6');
 
-let result;
-
-const operator = '*';
-
-const number1 = 46;
-const number2 = 0;
+function calculation(operator){
 
 switch(operator) {
   case '+':
-  result = number1 + number2;
-  console.log(`${number1} + ${number2} = ${result}`);
+  result = a + b;
+  return'${a} + ${b2} = ${result}';
   break;
 
-  case '-':
-  result = number1 - number2;
-  console.log(`${number1} - ${number2} = ${result}`);
+  case '-': result = a - b;
+  return '${a} - ${b} = ${result}';
   break;
 
   case '*':
-  result = number1 * number2;
-  console.log(`${number1} * ${number2} = ${result}`);
+  result = a * b;
+  return '${a} * ${b} = ${result}';
   break;
 
   case '/':
-  result = number1 / number2;
-  console.log(`${number1} / ${number2} = ${result}`);
+  result = a / b;
+  return 'return${a} / ${b} = ${result}';
   break;
 
   default:
-  console.log('Invalid operator');
+  return 'Invalid operator';
   break;
 }
+
+}
+
+console.log(`${number1} ${operator} ${number2} = ${result}`)  // намудрив з виводом консолі - буду вдячний за допомогу 
 
 /*
 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 */
 
-let str = 'JavaScript S0ftware Development';
-
-let noVowels = str.replace(/[aeiou]/gi, '');
-
-console.log(noVowels); 
+const removeVowels = function(string) {
+    return string.replace(/[aeiou]/gi, '')
+  }
+  console.log(removeVowels('happy'));
+  
 
 
 /*
