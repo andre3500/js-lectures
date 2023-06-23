@@ -20,7 +20,7 @@ if(hamburger > 3 && friedPotato === 1)
 }
 else {
      console.log('Ми йдемо в інше кафе')  
-
+}
 
 
 /*
